@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    font-family: 'muktaRegular';
+}
+html, body{
+    margin:0;
+    padding:0;
+}
+
+
+@font-face {
+    font-family: 'muktaRegular';
+    src: url('fonts/Mukta/Mukta-Regular.ttf');
+}
+@font-face {
+    font-family: 'cinzel';
+    src: url('fonts/Cinzel/Cinzel-VariableFont_wght.ttf');
+}
+
+header{
+    background-color: black;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+/*---topHeader----*/
+
+.topHeader-Itens{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+    /*------icons-------*/
+    .user-buttons{
+        display: flex;
+        justify-content: space-evenly;
+        width: 20%;
+    }
+        /*-------Icons-----*/
+        .fas{
+            color: white;
+        }
+    /*-------logo-----*/
+    .logo-name{
+        display: flex;
+        height: 70px;
+        color: white;
+        align-items: center;
+        margin-left: 37px;
+    }
+    .logo-name img{
+        width:45px;
+        height: 45px;
+        margin-right: 11px;
+    }
+    .logo-name h1 {
+        font-family: 'cinzel';
+        font-weight: 759;
+        font-size: 2.5em;
+    }
+/*----BottomHeader----*/
+
+.bottomHeader-itens{
+    width: 100%;
+    background-color: #f99909;
+}
+
+/*----nav bar----*/
+
+    .bottomHeader-itens .itens{
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+    .bottomHeader-itens li{
+        list-style-type: none;
+        width: 135px;
+        text-align: center;
+        border: black solid;
+        background-color: black;
+    }
+
+    /*--Search--*/
+
+        #search-button{
+            width: 17%;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 0px 16px 4px rgb(0 0 0 / 65%);
+            background-color: black;
+        }
+        #search-button input{
+            width: 84.9%;
+            margin-left: 3px;
+            background-color: black;
+            border: none;
+        }
+
+        #search-button button{
+            background-color: #ffb84d;
+            position: relative;
+            height: 20px;
+            border: none;
+            margin-left: 4px;
+        }
+        
+        #search-button input{
+            color: white;
+        }
+
+        /*---Taking out de x of the search input for tall the browsers---*/
+
+            /* clears the 'X' from Internet Explorer */
+            #search-button input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+            #search-button input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+            /* clears the 'X' from Chrome */
+            #search-button input[type="search"]::-webkit-search-decoration,
+            #search-button input[type="search"]::-webkit-search-cancel-button,
+            #search-button input[type="search"]::-webkit-search-results-button,
+            #search-button input[type="search"]::-webkit-search-results-decoration { display: none; }
