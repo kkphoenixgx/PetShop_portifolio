@@ -2,13 +2,27 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="Style/petShopIndex.css">
-        <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-        <link rel="stylesheet" href="lib/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-        <script src="https://kit.fontawesome.com/c4e6061e97.js" crossorigin="anonymous"></script>
-        
-        <link rel="icon" type="image/png" href="Style/images/kisspng-stock-photography-vector-graphics-image-phoenix-sh-phoenix-5d387430b9e1f2.2710644115639808487614.png">
         <title>Phoenix PetShop</title>
+        <link rel="icon" type="image/png" href="Style/images/kisspng-stock-photography-vector-graphics-image-phoenix-sh-phoenix-5d387430b9e1f2.2710644115639808487614.png">
+
+        <link rel="stylesheet" href="Style/petShopIndex.css">
+
+        <!--Js script-->
+        <script src="Dist/Client.js" defer></script>
+        <script src="Controller/Server.js" defer></script>
+        <script src="Controller/Controller.js" defer></script>
+        <script src="petShopIndex.js" defer></script>
+
+
+        <!--Dependencies-->
+
+        <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+
+        <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js" defer></script>
+        <script src="https://kit.fontawesome.com/c4e6061e97.js" defer crossorigin="anonymous"></script>
+        <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        
     </head>
     
     <body>
@@ -85,6 +99,26 @@
         <section>
             <div class="carrousel">
                 <!-- this will be images rotating with animals information-->
+
+            <div class="owl-carousel">
+                <div class="carouselImages">
+                    <img src="./Style/images/images (1).jpg" alt="image">
+
+                </div>
+                <div class="carouselImages">
+                    <img src="./Style/images/images (2).jpg" alt="image">
+
+                </div>
+                <div class="carouselImages">
+                    <img src="./Style/images/images (3).jpg" alt="image">
+                </div>
+                <div class="carouselImages">
+                    <img src="./Style/images/download.jpg" alt="image">
+                </div>
+                <div class="carouselImages">
+                    <img src="./Style/images/cute-big-eyes-960x540-1.jpg" alt="image">
+                </div>
+            </div>
             </div>
 
             <div class="informations">
@@ -102,10 +136,11 @@
             </div>
         </footer>
 
-        <script src="Dist/Client.js"></script>
-        <script src="Controller/Server.js"></script>
-        <script src="Controller/Controller.js"></script>
-        <script src="petShopIndex.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".owl-carousel").owlCarousel();
+            });
+        </script>
     </body>
 
 </html>
