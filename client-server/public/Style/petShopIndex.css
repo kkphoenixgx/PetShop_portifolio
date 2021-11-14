@@ -7,6 +7,9 @@ html, body{
     padding:0;
 }
 
+body{
+    background-color: black;
+}
 
 @font-face {
     font-family: 'muktaRegular';
@@ -101,19 +104,65 @@ header{
             background-color: black;
             border: none;
         }
-
         #search-button button{
             background-color: #ffb84d;
             position: relative;
             height: 20px;
             border: none;
-            margin-left: 4px;
         }
-        
         #search-button input{
             color: white;
         }
+        #search-button textarea:focus, input:focus, select:focus {
+            box-shadow: 0 0 0 0;
+            border: 0 none;
+            outline: 0;
+        } 
 
+/*----Section----*/
+
+.styledBorder{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+    /* Just a design line */
+    .styledBorder .border{
+        display: flex;
+        align-items: center;
+    }
+    .styledBorder .line{
+        width: 100px;
+        height: 8px;
+        background-color: black;
+    }
+    .styledBorder .triangleR{
+        width: 0; 
+        height: 0; 
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid black;      
+    }
+    .styledBorder .triangleL{
+        width: 0; 
+        height: 0; 
+        border-bottom: 8px solid transparent; 
+        border-right: 8px solid black; 
+    }
+
+.background{
+    /* background: url("./images/florest.jpg") no-repeat; */
+    height: 50vw;
+    width: 100%;
+    position: relative;
+    background-position: -1px 0px; 
+}
+
+.carrousel {
+    margin-top: 8px;
+}
+.owl-carousel .carouselImages img{
+    height: 250px;
+}
         /*---Taking out de x of the search input for tall the browsers---*/
 
             /* clears the 'X' from Internet Explorer */

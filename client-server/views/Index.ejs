@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Phoenix PetShop</title>
+        <link rel="icon" type="image/png" href="Style/images/kisspng-stock-photography-vector-graphics-image-phoenix-sh-phoenix-5d387430b9e1f2.2710644115639808487614.png">
+
+        <link rel="stylesheet" href="Style/petShopIndex.css">
+        <script type="module" src="../src/petShopIndex.js" defer></script>
+
+        <!--Dependencies-->
+        
+        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="https://kit.fontawesome.com/c4e6061e97.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+
+        
+    </head>
+    
+    <body>
+        
+        <header>
+
+            <div class="topHeader-Itens">
+
+                <div class = "logo-name">
+                    <img src="Style/images/kisspng-stock-photography-vector-graphics-image-phoenix-sh-phoenix-5d387430b9e1f2.2710644115639808487614.png" alt="logotipo">
+                    <h1 id="Logo-name">PHOENIX PET SHOP</h1>
+                </div>
+
+                <div class="user-buttons">
+
+                    <div class="shopping-cart">
+                        <i class="fas fa-shopping-cart"></i>
+
+                        <!-- a simple shopping cart with all the current buys and all the animals that the client is buying-->
+
+                        <!-- that will show that you have to be logged in to buy when clicked-->
+                    </div>
+
+                    <div class="login-register">
+                        <i class="fas fa-sign-in-alt"></i>
+                        <!-- A login/register to start buying, save your history of animals and accessories for animals-->
+
+                        <!-- when it have been clicked, show a user part with some information, like favorite races that you follow-->
+                    </div>
+
+                    <div class="config">
+                        <i class="fas fa-cog"></i>
+                        
+                        <!-- this will be all kind of configuration that the user can change, I have
+                        Ideas of themes, just two of then, the dark and white, -->
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <nav class="bottomHeader-itens">
+                <ul class="itens">
+
+                    <li id="animals">Animals
+                        <!-- this will translate to a page with the current animals on the site -->
+                    </li>
+    
+                    <li id="accessories">Accessories
+                        <!-- this will translate to a page with accessories-->
+                    </li>
+    
+                    <li id = "petShop-information"> Information
+                        <!-- A way to have more information about the pet shop, like the parking lot-->
+                    </li>
+
+                    <li id = "petShop-vet"> Medical
+                        <!-- A way to have more information about the pet shop, like the parking lot-->
+                    </li>
+
+                    <form id="search-button">
+                        <input type="search" placeholder="search..." aria-label="search...">
+                        <button><i class="fas fa-search"></i></button>                      
+                    </form>
+
+                    <!-- The sidebar that will move if the icon have been clicked-->
+                
+                </ul>
+
+            </nav>
+
+        </header>
+
+        <section>
+            <div class="carrousel">
+                <!-- this will be images rotating with animals information-->
+
+                <div class="styledBorder">
+                    <div class="border">
+                        <div class="line"></div>
+                        <div class="triangleR"></div>
+                    </div>
+                    <div class="border" style="flex-direction: row-reverse;">
+                        <div class="line"></div>
+                        <div class="triangleL"></div>
+                    </div>
+                </div>
+
+                <div class="owl-carousel owl-theme owl-loaded">
+
+                    <div class="owl-stage-outer owl-lazy">
+                        <div class="owl-stage owl-lazy">
+                            <div class="owl-item carouselImages">
+                                <img src="./Style/images/images (1).jpg" alt="image">
+                            </div>
+            
+                            <div class="owl-item carouselImages">
+                                <img src="./Style/images/images (2).jpg" alt="image">
+                            </div>
+            
+                            <div class="owl-item carouselImages">
+                                <img src="./Style/images/images (3).jpg" alt="image">
+                            </div>
+            
+                            <div class="owl-item carouselImages">
+                                <img src="./Style/images/download.jpg" alt="image">
+                            </div>
+                            
+                            <div class="owl-item carouselImages">
+                                <img src="./Style/images/cute-big-eyes-960x540-1.jpg" alt="image">
+                            </div>
+
+                            <div class="owl-item carouselImages">
+                                <img src="./Style/images/dog1.jpg" alt="image">
+                            </div>
+
+                            <div class="owl-item carouselImages">
+                                <img src="./Style/images/dog2.jpg" alt="image">
+                            </div>
+
+                            <div class="owl-item carouselImages">
+                                <img src="./Style/images/dog3.jpg" alt="image">
+                            </div>
+
+                            <div class="owl-item carouselImages">
+                                <img src="./Style/images/bird1.jpg" alt="image">
+                            </div>
+
+                            <div class="owl-item carouselImages">
+                                <img src="./Style/images/bird2.jpg" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="informations">
+
+                    <!-- This will be the part bellow the carousel that will have information about how the pets 
+                        have been taking care with some pictures and facts that people can have security about 
+                        this pet shop is the correct choice-->
+                    
+                    <div id="#bannerWeDoDelivery">
+                        <div class="background">
+                            <h1>We delivery your pet</h1>
+                            <h2>We can delivery in your house, check our prices!</h2>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="information-grid">
+                <!-- and this will be a grid with some information about locates, social-media and contact the programmer-->
+            </div>
+        </footer>
+
+    </body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+    "name": "client-server",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+        "start": "node ./bin/www"
+    },
+    "dependencies": {
+        "jquery": "^3.6.0",
+        "owl.carousel": "^2.3.4"
+    }
+}
